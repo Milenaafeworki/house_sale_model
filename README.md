@@ -2,11 +2,11 @@
 
 # King's County House Sale Prediction
 
-In this project I'm going to analyze the King's County housing data set listing various data points for property sales in the King's County area of Washington (centered around Seattle). I will be using Linear Regression to identify the most influential variables controlling sale price. For the purposes of this exercise, I will be working from the position as a consultant to a hypothetical Real Estate Agency interested in single falmily homes in the Seattle area. I will be using the OSEMN (Obtain, Scrub, Explore, Model, Interpret) Data Science process in this project.
+In this project I will be working from the position as a consultant for a hypothetical Real Estate Agency interested in single falmily homes in the Seattle area. King's County housing data set lists various data points for property sales in the King's County area of Washington. Using the OSEMN (Obtain, Scrub, Explore, Model, Interpret) Data Science process and linear regression, we will take a look at the most influential variables controlling sales price.
 
 ## The Business Problem
 
-The King's County data shows various figures of features for house sold in 2014 and 2015. As a consultant, I will try and identify the significant factors affecting the sale price of homes, so the agency could have a finest structure of how much a house entering the market would cost according to these specific factors. These factors will include location of the house, living area, number of bedrooms, grade/condition of the house etc. Such conceptual information could increase the agency's ability to provide valuable knowledge and information at each step for the clients while also coming up with an unbiased valuation of their home and help set a listing/buying price.
+The King's County data shows various figures of features for house sold in 2014 and 2015. As a consultant, I will try and identify the significant factors affecting the sale price of homes, so the agency could have a finest structure of how much a house entering the market would cost according to these specific features. These features will include location of the house, living area, number of bedrooms, grade/condition of the house etc. Such conceptual information could increase the agency's ability to provide valuable knowledge and information at each step for the clients while also coming up with an unbiased valuation of their home and help set a listing/buying price.
 
 ## The OSMEN Process
 
@@ -45,7 +45,7 @@ The raw housing data contains the following columns:
 - sqft_living15 - The average square footage of the interiors of the nearest 15 neighbors
 - sqft_lot15 - The avergae square footage of the lots of the nearest 15 neighbors.
 
-Here is a map of the data around the Seattle area:
+Here is a map of Seattle area in King's county:
 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/County%20map.png'>
 
@@ -59,7 +59,7 @@ For my baseline model, after I cleaned the columns for null and outlier values, 
 
 ## Process
 
-Using my baseline model as a guide, I reiterated this process with the following steps:
+Using my baseline model as a guide, I reiterated through these processes with the following steps:
 
 - Log Transformation
 - One-Hot-Encoding Categoricals
@@ -88,11 +88,14 @@ As we have seen, in our final model, we could account for about 77.9% of the var
 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/coefficients.png'>
 
-- Adding square footage to a property can add significant value to a house.
-- Properties built in the Cities Medina and Mercer neighbourhoods do have a higher sale price.
-- And the more North we travel the higher the housing market price of the properties.
+## Recommendations
 
-The model can be used to predict house price although the model is not amazingly accurate. Still the results can be used for understanding the features of a property's relationship to the market. The models here focus on isolating factors for accurate coefficients rather than on precise prediction.
+1. Adding square footage to a property can add significant value to a house.
+2. Direct buyers with higher budget and priority of living area to invest on properties towards the Northern region of Seattle. 
+3. Engage only in transaction of  homes with Condition value of (4-5).
+
+
+The model can be used to predict house price although the model is not amazingly accurate. Still the results can be used for understanding the features of a property's relationship to the market price. The models here focus on isolating factors for accurate coefficients rather than on precise prediction.
 
 ## Areas of Further Study
 
@@ -100,10 +103,9 @@ This model has a lot of room for improvement. Other areas to explore in this dat
 
 - Discover how sqft_basement for a given Lot area would play a role
   in the sales price.
-- Determine the value of different types of expansions (Bedroom,
-  Bathroom) and investigate how that affects the value of a house.
-- Identify areas of Seattle where housing prices are increasing and possibly predict which neighborhoods will be ideal for     settlement in the future.
-- Improve the model With more data over the years after 2015 and observe if there is any change in the trend of the major  factors.
+- Determine the value of different types of expansions (Bedroom, Bathroom) and investigate how that affects the value of a house.
+- Identify areas of Seattle where housing prices are increasing and possibly predict which neighborhoods will be ideal for settlement in the   future.
+- Improve the model with more data over the years after 2015 and observe if there is any change in the trend of the major  factors.
 
 ```
 ├── images
