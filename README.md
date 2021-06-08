@@ -1,3 +1,5 @@
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/Seattle%20housing%20images.jpg'>
+
 # King's County House Sale Prediction
 
 In this project I'm going to analyze the King's County housing data set listing various data points for property sales in the King's County area of Washington (centered around Seattle). I will be using Linear Regression to identify the most influential variables controlling sale price. For the purposes of this exercise, I will be working from the position as a consultant to a hypothetical Real Estate Agency interested in single falmily homes in the Seattle area. I will be using the OSEMN (Obtain, Scrub, Explore, Model, Interpret) Data Science process in this project.
@@ -45,7 +47,7 @@ The raw housing data contains the following columns:
 
 Here is a map of the data around the Seattle area:
 
-
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/Seattle%20housing%20images.jpg'>
 
 # IMAGE
 
@@ -70,6 +72,7 @@ My final model used a combination of every one of these alterations listed. The 
 
 # IMAGE
 
+
 Our final R2 score came to 0.806, meaning that it can account for 80.6% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
 
 ## Conclusions and Interpretation
@@ -81,6 +84,7 @@ As we have seen, in our final model, we could account for about 77.9% of the var
 - Built in Mercer (0.599)
 - Square Footage of Living Space (0.57)
 - Waterfront View (0.47)
+
 
 
 - Adding square footage to a property can add significant value to a house.
