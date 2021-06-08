@@ -47,15 +47,15 @@ The raw housing data contains the following columns:
 
 Here is a map of the data around the Seattle area:
 
-<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/Seattle%20housing%20images.jpg'>
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/County%20map.png'>
 
-# IMAGE
+
 
 ## Baseline model
 
 For my baseline model, after I cleaned the columns for null and outlier values, I divided my data into continuous, categorical and outcome data, but for the purpose of this first model, categorical and continuous variables will both be treated as continuous. My outcome, price, is the success metric. Predictably, this model was poorly fit to the data. Below you can see the residuals show strong heteroscedasticity and the residuals do not follow a normal distribution:
 
-# IMAGE
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/base_line%20model.png'>
 
 ## Process
 
@@ -70,7 +70,7 @@ Using my baseline model as a guide, I reiterated this process with the following
 
 My final model used a combination of every one of these alterations listed. The final model has the following residuals and R2 score:
 
-# IMAGE
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/final%20madel.png'>
 
 
 Our final R2 score came to 0.806, meaning that it can account for 80.6% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
@@ -84,8 +84,9 @@ As we have seen, in our final model, we could account for about 77.9% of the var
 - Built in Mercer (0.599)
 - Square Footage of Living Space (0.57)
 - Waterfront View (0.47)
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/R2_final.png'>
 
-
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/coefficients.png'>
 
 - Adding square footage to a property can add significant value to a house.
 - Properties built in the Cities Medina and Mercer neighbourhoods do have a higher sale price.
@@ -104,7 +105,12 @@ This model has a lot of room for improvement. Other areas to explore in this dat
 - Identify areas of Seattle where housing prices are increasing and possibly predict which neighborhoods will be ideal for     settlement in the future.
 - Improve the model With more data over the years after 2015 and observe if there is any change in the trend of the major  factors.
 
-
-```python
-
+```
+├── images
+├── data
+├── House_sale_prediction.ipynb
+├── House_sale_prediction_cleaned.ipynb
+├── all_zipcodes.csv
+├── README.md
+└── presentation.pdf
 ```
