@@ -76,14 +76,19 @@ My final model used a combination of every one of these alterations listed. The 
 Our final R2 score came to 0.806, meaning that it can account for 80.6% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
 
 ## Conclusions and Interpretation
+As we have seen, in our final model, we could account for about 78% of the variance in the housing price data. Our mean absolute error for the model is around $91,627, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
 
-As we have seen, in our final model, we could account for about 77.9% of the variance in the housing price data. Our mean absolute error for the model is around $91,600, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
+- **Latitude**:(1.25) 
+    (How far North the property is) A unit increase in latitude increases the price of a property by 1.25 units.
+- **Built in Medina**: (0.87)
+- **Built in Mercer**:(0.6) 
+    A property in Medina would be worth (0.87-0.6) units more than a property in Mercer.
+- **Square Footage of Living**: 
+    a 1% increase would account for 0.61% increase in price
+- **Waterfront View**: (0.49) 
+    A property's price with waterfront would be 0.49 units higher than if it didn't have waterfront.  
 
-- Latitude - How far North the property is (1.25)
-- Built in Medina (0.865)
-- Built in Mercer (0.599)
-- Square Footage of Living Space (0.57)
-- Waterfront View (0.47)
+
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/R2_final.png'>
 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/coefficients.png'>
@@ -110,9 +115,11 @@ This model has a lot of room for improvement. Other areas to explore in this dat
 ```
 ├── images
 ├── data
+├── all_zipcodes.csv
 ├── House_sale_prediction.ipynb
 ├── House_sale_prediction_cleaned.ipynb
-├── all_zipcodes.csv
+├── House_sale_prediction.pdf
+├── House_sale_prediction_cleaned.pdf
 ├── README.md
 └── presentation.pdf
 ```
