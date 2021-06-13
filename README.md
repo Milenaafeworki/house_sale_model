@@ -53,7 +53,7 @@ Here is a map of Seattle area in King's county:
 
 ## Baseline model
 
-For my baseline model, after I cleaned the columns for null and outlier values, I divided my data into continuous, categorical and outcome data, but for the purpose of this first model, categorical and continuous variables will both be treated as continuous. My outcome, price, is the success metric. Predictably, this model was poorly fit to the data. Below you can see the residuals show strong heteroscedasticity and the residuals do not follow a normal distribution:
+For my baseline model, after I cleaned the columns for null and outlier values, I divided my data into continuous, categorical and outcome data, but for the purpose of this first model, categorical and continuous variables will both be treated as continuous. My outcome, price, is the success metric. Predictably, this model was poorly fit to the data. Below you can see the residuals show strong heteroscedasticity and do not follow a normal distribution:
 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/base_line%20model.png'>
 
@@ -73,25 +73,30 @@ My final model used a combination of every one of these alterations listed. The 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/final%20madel.png'>
 
 
-Our final R2 score came to 0.806, meaning that it can account for 80.6% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
+Our final R2 score came to 0.793, meaning that it can account for 79.3% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
 
 ## Conclusions and Interpretation
-As we have seen, in our final model, we could account for about 78% of the variance in the housing price data. Our mean absolute error for the model is around $91,627, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
 
-- **Latitude**:(1.25) 
-    (How far North the property is) A unit increase in latitude increases the price of a property by 1.25 units.
+As we have seen, in our final model, we could account for about 79.3% of the variance in the housing price data. Our mean absolute error for the model is around $133,450, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
+
+
 - **Built in Medina**: (0.87)
 - **Built in Mercer**:(0.6) 
-    A property in Medina would be worth (0.87-0.6) units more than a property in Mercer.
+    A property in Medina would be worth (0.86-0.58) 27% more than a property in Mercer.
+    
 - **Square Footage of Living**: 
-    a 1% increase would account for 0.61% increase in price
-- **Waterfront View**: (0.49) 
-    A property's price with waterfront would be 0.49 units higher than if it didn't have waterfront.  
+    a 1% increase would account for 0.49% increase in price
+    
+- **Waterfront View**: (0.48) 
+    A property's price with waterfront would be 48%  higher than if it didn't have waterfront. 
+    
+- **Condition 4**:(0.059)
+- **Condition abv_4**:(0.1324)
+    Sale price would be 7.3% higher for a property with Condition (>4) than for a condition value(4) property.
 
 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/R2_final.png'>
 
-<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/coefficients.png'>
 
 ## Recommendations
 
