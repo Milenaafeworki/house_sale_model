@@ -73,29 +73,28 @@ My final model used a combination of every one of these alterations listed. The 
 <img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/final%20madel.png'>
 
 
-Our final R2 score came to 0.793, meaning that it can account for 79.3% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
+Our final R2 score came to 0.793, meaning that it can account for 79.9% of the data's variance. Our Mean Absolute Error is around $100,000, so the model won't be able to effectively predict the final dollar amount of a property sale, but we can infer the most important factors involved in calculating the price.
 
 ## Conclusions and Interpretation
 
-As we have seen, in our final model, we could account for about 79.3% of the variance in the housing price data. Our mean absolute error for the model is around $133,450, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
+As we have seen, in our final model, we could account for about 79.3% of the variance in the housing price data. Our mean absolute error for the model is around $133,000, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
 
 
-- **Built in Medina**: (0.87)
-- **Built in Mercer**:(0.6) 
+- **Built in Medina**: (0.86)
+- **Built in Mercer**:(0.58) 
     A property in Medina would be worth (0.86-0.58) 27% more than a property in Mercer.
     
 - **Square Footage of Living**: 
     a 1% increase would account for 0.49% increase in price
     
-- **Waterfront View**: (0.48) 
-    A property's price with waterfront would be 48%  higher than if it didn't have waterfront. 
+- **Waterfront View**: (0.49) 
+    A property's price with waterfront would be 49%  higher than if it didn't have waterfront. 
     
 - **Condition 4**:(0.059)
-- **Condition abv_4**:(0.1324)
-    Sale price would be 7.3% higher for a property with Condition (>4) than for a condition value(4) property.
+- **Condition abv_4**:(0.135)
+    Sale price would be 7.6% higher for a property with Condition (>4) than for a condition value(4) property.
 
-
-<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/R2_final.png'>
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/model_performance.png'>
 
 
 ## Recommendations
