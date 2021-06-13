@@ -77,7 +77,9 @@ Our final R2 score came to 0.793, meaning that it can account for 79.9% of the d
 
 ## Conclusions and Interpretation
 
-As we have seen, in our final model, we could account for about 79.3% of the variance in the housing price data. Our mean absolute error for the model is around $133,000, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
+<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/model_performance.png'>
+
+As we have seen, in our final model, we could account for about 79.9% of the variance in the housing price data. Our mean absolute error for the model is around $133,000, which is not ideal for accurately predicting a sale price. That said, based on this model, we know that the five most influential factors in property sale price with their coefficients are:
 
 
 - **Built in Medina**: (0.86)
@@ -94,7 +96,7 @@ As we have seen, in our final model, we could account for about 79.3% of the var
 - **Condition abv_4**:(0.135)
     Sale price would be 7.6% higher for a property with Condition (>4) than for a condition value(4) property.
 
-<img src='https://raw.githubusercontent.com/Milenaafeworki/house_sale_model/main/images/model_performance.png'>
+
 
 
 ## Recommendations
